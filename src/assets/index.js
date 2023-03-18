@@ -24,7 +24,11 @@ import kenzieEmpresas from './KenzieEmpresas.png'
 import gitSearch from './gitSearch.png'
 import controlFinance from './controlFinance.png'
 import linkedin from './linkedin.png'
-
+import moon from './moon.png'
+import express from './tech/expressJs.png'
+import postgres from './tech/postgresql.png'
+import styledComponents from './tech/styled-components.svg'
+import github2 from './tech/github2.png'
 
 export {
   logo,
@@ -52,5 +56,10 @@ export {
   controlFinance,
   gitSearch,
   kenzieEmpresas,
-  linkedin
+  linkedin,
+  moon,
+  express,
+  postgres,
+  styledComponents,
+  github2
 }

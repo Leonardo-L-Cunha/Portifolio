@@ -20,6 +20,10 @@ import {
     controlFinance,
     gitSearch,
     kenzieEmpresas,
+    express,
+    postgres,
+    styledComponents,
+    github2,
     
   } from "../assets"
   
@@ -89,6 +93,14 @@ import {
     {
       name: "figma",
       icon: figma,
+    },
+    {
+      name: "Express Js",
+      icon: express,
+    },
+    {
+      name: "PostgreSQL",
+      icon: postgres,
     }
   ]
   

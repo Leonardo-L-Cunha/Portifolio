@@ -23,7 +23,8 @@ const Works = () => {
           exemplos do mundo real do meu trabalho. Cada projeto é brevemente descrito com
           links para repositórios de código e demonstrações ao vivo nele. Reflete o meu
           capacidade de resolver problemas complexos, trabalhar com diferentes tecnologias,
-          e gerenciar projetos de forma eficaz
+          e gerenciar projetos de forma eficaz. 
+          Para ver todos meus projetos tanto front-end quanto back-end clique <a href='https://github.com/Leonardo-L-Cunha' target='_blank' className='font-bold text-blue-500'>aqui</a>
         </motion.p>
       </div>
       <div className='mt-20 flex flex-wrap gap-7'>
