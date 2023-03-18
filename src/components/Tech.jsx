@@ -1,18 +1,18 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import { BallCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { technologies } from '../constants'
 import { styles } from '../styles'
 
 const Tech = () => {
-  const [hoveredTechnology, setHoveredTechnology] = useState(null);
+  const [hoveredTechnology, setHoveredTechnology] = useState(null)
 
   const handleTechnologyHover = (technology) => {
-    setHoveredTechnology(technology);
+    setHoveredTechnology(technology)
   }
 
   const handleTechnologyLeave = () => {
-    setHoveredTechnology(null);
+    setHoveredTechnology(null)
   }
 
   return (
@@ -41,4 +41,4 @@ const Tech = () => {
   )
 }
 
-export default SectionWrapper(Tech,'');
+export default SectionWrapper(Tech,'')
