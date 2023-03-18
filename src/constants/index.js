@@ -24,7 +24,7 @@ import {
     postgres,
     styledComponents,
     github2,
-    
+    fullstack
   } from '../assets'
   
   export const navLinks = [
@@ -44,12 +44,16 @@ import {
   
   const services = [
     {
-      title: 'Web Developer',
-      icon: web,
+      title: 'Frontend Developer',
+      icon: reactjs,
     },
     {
       title: 'Backend Developer',
-      icon: backend,
+      icon: nodejs,
+    },
+    {
+      title: 'Fullstack Developer',
+      icon: fullstack,
     },
 ]
   
@@ -111,16 +115,16 @@ import {
         'Site traz vagas apenas para desenvolvedores júniors,onde tanto os devs quanto as empresas podem se cadastrar. Os devs podem se candidatar às vagas que as empresas cadastrarem, e de acordo com o perfil do mesmo a empresa pode contratá lo',
       tags: [
         {
-          name: 'react',
+          name: 'React',
           color: 'blue-text-gradient',
         },
         {
-          name: 'fakeAPI',
+          name: 'FakeAPI',
           color: 'green-text-gradient',
         },
         {
-          name: 'styled-components',
-          color: 'pink-text-gradient',
+          name: 'Styled-components',
+          color: 'orange-text-gradient',
         },
       ],
       image: juniorJobs,
@@ -132,16 +136,16 @@ import {
         'Projeto onde aprendemos sobre context do react, O projeto tem uma pagina de cadastro, login e a homepage onde vc pode cadastrar uma tecnologia, editar e deletar',
       tags: [
         {
-          name: 'react',
+          name: 'React',
           color: 'blue-text-gradient',
         },
         {
-          name: 'restapi',
+          name: 'APIrest',
           color: 'green-text-gradient',
         },
         {
-          name: 'context',
-          color: 'pink-text-gradient',
+          name: 'Context',
+          color: 'blue-text-gradient',
         },
       ],
       image: kenzieHub,
@@ -153,12 +157,12 @@ import {
         'Minha primeira aplicação usando o React, uma aplicação para gerenciamento de gastos, cadastrando entradas e saídas.',
       tags: [
         {
-          name: 'Reactjs',
+          name: 'React',
           color: 'blue-text-gradient',
         },
        {
-          name: 'css',
-          color: 'pink-text-gradient',
+          name: 'Css',
+          color: 'blue-text-gradient',
         },
       ],
       image: nuKenzie,
@@ -170,16 +174,16 @@ import {
         'O objetivo desta entrega é construir uma aplicação baseada no que aprenderam em React e usando Typescript, como também aperfeiçoar suas habilidades de estilização.',
       tags: [
         {
-          name: 'Reactjs',
+          name: 'React',
           color: 'blue-text-gradient',
         },
        {
           name: 'Typescript',
-          color: 'pink-text-gradient',
+          color: 'blue-text-gradient',
         },
         {
           name: 'APIrest',
-          color: 'pink-text-gradient',
+          color: 'green-text-gradient',
         },
       ],
       image: burgueria,
@@ -192,15 +196,15 @@ import {
       tags: [
         {
           name: 'Javascript',
-          color: 'blue-text-gradient',
+          color: 'text-yellow-300',
         },
        {
           name: 'Css',
-          color: 'pink-text-gradient',
+          color: 'blue-text-gradient',
         },
         {
           name: 'Html',
-          color: 'pink-text-gradient',
+          color: 'text-red-600',
         },
       ],
       image: controlFinance,
@@ -213,19 +217,19 @@ import {
       tags: [
         {
           name: 'Javascript',
-          color: 'blue-text-gradient',
+          color: 'text-yellow-300',
         },
        {
           name: 'Css',
-          color: 'pink-text-gradient',
+          color: 'blue-text-gradient',
         },
         {
           name: 'Html',
-          color: 'pink-text-gradient',
+          color: 'text-red-600',
         },
         {
           name: 'APIrest',
-          color: 'pink-text-gradient',
+          color: 'green-text-gradient',
         },
       ],
       image: gitSearch,
@@ -238,19 +242,19 @@ import {
       tags: [
         {
           name: 'Javascript',
-          color: 'blue-text-gradient',
+          color: 'text-yellow-300',
         },
        {
           name: 'Css',
-          color: 'pink-text-gradient',
+          color: 'blue-text-gradient',
         },
         {
           name: 'Html',
-          color: 'pink-text-gradient',
+          color: 'text-red-600',
         },
         {
           name: 'APIrest',
-          color: 'pink-text-gradient',
+          color: 'green-text-gradient',
         },
       ],
       image: kenzieEmpresas,

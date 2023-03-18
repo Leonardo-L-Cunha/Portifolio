@@ -7,53 +7,53 @@ import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 import { github } from '../assets'
 import { linkedin } from '../assets'
-
+import { useForm } from 'react-hook-form'
+import { toast } from 'react-toastify'
+import * as yup from 'yup'
+import { yupResolver} from '@hookform/resolvers/yup'
 
 const Contact = () => {
   const formRef = useRef()
-  const [form, setForm] = useState({
-    name:'',
-    email:'',
-    message: ''
+
+  const echema = yup.object().shape({
+    name: yup.string().required('Nome obrigatorio').min(3, 'Minimo 3 caracteres'),
+    email: yup.string().required('Email Obrigatorio').email('Email invadilo'),
+    message: yup.string().required('Mensagem Obrigatoria')
+
+  })
+  
+  const {register, handleSubmit, formState: {errors}} = useForm({
+    resolver: yupResolver(echema)
   })
   const [ loading, setLoading ] = useState(false)
 
-  const handleChange = (e) => {
-    const { name, value } = e.target
-
-    setForm({...form,[name]: value})
-  }
-  const handleSubmit = (e) => {
-    e.preventDefault()
+  
+  const onSubmit = (data) => {
+    
     setLoading(true)
 
     emailjs.send(
       'service_vvg05pu',
       'template_n48p05f',
       {
-        from_name: form.name,
+        from_name: data.name,
         to_name: 'Leonardo',
-        from_email: form.email,
+        from_email: data.email,
         to_email: 'leonavidareal@gmail.com',
-        message: form.message
+        message: data.message
       },
       'kvQaM5aainRrYKblm'
       )
       .then(() => {
         setLoading(false)
-        alert('Obrigado, eu vou retornar para você o mais rápido possível')
+        toast.success('Obrigado, eu vou retornar para você o mais rápido possível')
         
-        setForm({
-          name: '',
-          email: '',
-          message:''
-        })
       },(error) => {
         setLoading(false)
 
         console.log(error)
 
-        alert('Algo deu errado')
+        toast.error('Algo deu errado')
       } )
   }
   return (
@@ -66,7 +66,7 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Contato.</h3>
         <form
           ref={formRef}
-          onSubmit={handleSubmit}
+          onSubmit={handleSubmit(onSubmit)}
           className='mt-12 flex flex-col gap-8'
         >
           <label htmlFor="" className='flex flex-col'>
@@ -74,39 +74,39 @@ const Contact = () => {
             <input 
             type='text' 
             name='name' 
-            value={form.name}  
-            onChange={handleChange}
+            {...register('name')}
             placeholder='Qual e seu nome ?'
             className='bg-tertiary py-4 px-6  placeholder:text-secondary
             text-white rounded-lg outlined-none
             border-none  font-medium'
             />
+            {errors.name?.message && <span className='text-xs text-red-700' >{errors.name.message}</span>} 
           </label>
           <label htmlFor='' className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Seu Email</span>
             <input 
-            type='email' 
+            type='text' 
             name='email' 
-            value={form.email}  
-            onChange={handleChange}
+            {...register('email')}
             placeholder='Qual e seu email ?'
             className='bg-tertiary py-4 px-6  placeholder:text-secondary
             text-white rounded-lg outlined-none
             border-none  font-medium'
             />
+            {errors.email?.message && <span className='text-xs text-red-700'>{errors.email.message}</span>} 
           </label>
           <label htmlFor='' className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Sua messagem</span>
             <textarea 
             rows='7'
             name='message' 
-            value={form.message}  
-            onChange={handleChange}
+            {...register('message')}
             placeholder='O que você quer dizer ?'
             className='bg-tertiary py-4 px-6  placeholder:text-secondary
             text-white rounded-lg outlined-none
             border-none  font-medium'
             />
+            {errors.message?.message && <span className='text-xs text-red-700'>{errors.message.message}</span>} 
           </label>
           <button
             type='submit'

@@ -29,7 +29,7 @@ import express from './tech/expressJs.png'
 import postgres from './tech/postgresql.png'
 import styledComponents from './tech/styled-components.svg'
 import github2 from './tech/github2.png'
-
+import fullstack from './tech/fullstack.png'
 export {
   logo,
   backend,
@@ -61,5 +61,6 @@ export {
   express,
   postgres,
   styledComponents,
-  github2
+  github2,
+  fullstack
 }

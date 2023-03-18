@@ -5,7 +5,7 @@ import { styles } from '../styles'
 const Main = () => {
   return (
     <section className='relative w-full h-screen mx-auto'>
-      <div className='absolute inset-0 top-[120px] max-w-7xl mx-auto px-5 flex flex-col md:flex-row md:justify-center items-center gap-5 '>
+      <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto px-5 flex flex-col md:flex-row md:justify-center items-center gap-5`}>
         <div className=' md:w-1/2 flex flex-col'>
           <h1 className={`text-white ${styles.heroHeadText}`}>
             Olá, meu nome é <span className='text-[#915EFF]'>Leonardo</span>
