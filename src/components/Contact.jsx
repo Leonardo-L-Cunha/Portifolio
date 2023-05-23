@@ -96,7 +96,7 @@ const Contact = () => {
             {errors.email?.message && <span className='text-xs text-red-700'>{errors.email.message}</span>} 
           </label>
           <label htmlFor='' className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Sua messagem</span>
+            <span className='text-white font-medium mb-4'>Sua mensagem</span>
             <textarea 
             rows='7'
             name='message' 

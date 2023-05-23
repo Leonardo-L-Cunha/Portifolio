@@ -16,7 +16,7 @@ const About = () => {
           className='mt-4 text-secondary text-[17px]
           max-w-3x1 leading-[30px]'
         >
-        De Mucuri - BA e tenho 27 anos, Acabo de me forma como desenvolvedor Full-Stack pela Kenzie Academy. Sou um aprendiz rápido e colaboro estreitamente com o time para criar soluções eficientes, escaláveis e fáceis de usar que resolvam problemas do mundo real. vamos trabalhar juntos para dar vida às suas ideias!. 
+        De Mucuri - BA e tenho 27 anos, Acabo de me formar como desenvolvedor Full-Stack pela Kenzie Academy. Sou um aprendiz rápido e colaboro estreitamente com o time para criar soluções eficientes, escaláveis e fáceis de usar que resolvam problemas do mundo real. vamos trabalhar juntos para dar vida às suas ideias!. 
         </motion.p>
 
         <div className='mt-20 flex flex-wrap gap-10'>

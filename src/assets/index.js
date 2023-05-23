@@ -30,6 +30,13 @@ import postgres from './tech/postgresql.png'
 import styledComponents from './tech/styled-components.svg'
 import github2 from './tech/github2.png'
 import fullstack from './tech/fullstack.png'
+import vercel from './tech/vercel.png'
+import python from  './tech/python.png'
+import django from './tech/django.png'
+import nest from './tech/nest.png'
+import next from './tech/next-js.svg'
+
+
 export {
   logo,
   backend,
@@ -62,5 +69,10 @@ export {
   postgres,
   styledComponents,
   github2,
-  fullstack
+  fullstack,
+  vercel,
+  python,
+  django,
+  nest,
+  next
 }

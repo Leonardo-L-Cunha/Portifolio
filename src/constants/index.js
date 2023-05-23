@@ -24,7 +24,11 @@ import {
     postgres,
     styledComponents,
     github2,
-    fullstack
+    fullstack,
+    python,
+    django,
+    next,
+    nest
   } from '../assets'
   
   export const navLinks = [
@@ -105,6 +109,26 @@ import {
     {
       name: 'PostgreSQL',
       icon: postgres,
+    },
+    {
+      name: 'Redux',
+      icon : redux,
+    },
+    {
+      name: 'Python',
+      icon : python,
+    },
+    {
+      name: 'Django',
+      icon : django,
+    },
+    {
+      name: 'NextJs',
+      icon : next,
+    },
+    {
+      name: 'NestJs',
+      icon : nest,
     }
   ]
   
@@ -129,6 +153,7 @@ import {
       ],
       image: juniorJobs,
       source_code_link: 'https://github.com/Project-Junior-Jobs/Junior-jobs',
+      source_vercel_link:'https://junior-jobs-eta.vercel.app/'
     },
     {
       name: 'Kenzie Hub',
@@ -150,6 +175,7 @@ import {
       ],
       image: kenzieHub,
       source_code_link: 'https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-kenzie-hub-leonardo-l-cunha',
+      source_vercel_link:'https://react-entrega-kenzie-hub-leonardo-l-cunha.vercel.app/'
     },
     {
       name: 'Nu Kenzie',
@@ -167,6 +193,7 @@ import {
       ],
       image: nuKenzie,
       source_code_link: 'https://github.com/Kenzie-Academy-Brasil-Developers/entrega-s1-nukenzie-leonardo-l-cunha',
+      source_vercel_link:'https://entrega-s1-nukenzie-leonardo-l-cunha.vercel.app/'
     },
     {
       name: 'Kenzie Burger',
@@ -188,6 +215,7 @@ import {
       ],
       image: burgueria,
       source_code_link: 'https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-hamburgueria-v2-leonardo-l-cunha',
+      source_vercel_link:'https://react-entrega-hamburgueria-v2-leonardo-l-cunha.vercel.app/'
     },
     {
       name: 'Control Finance',
@@ -209,6 +237,7 @@ import {
       ],
       image: controlFinance,
       source_code_link: 'https://github.com/Kenzie-Academy-Brasil-Developers/control-finance-Leonardo-L-Cunha',
+      source_vercel_link:'https://control-finance-leonardo-l-cunha.vercel.app/'
     },
     {
       name: 'Git Search',
@@ -234,6 +263,7 @@ import {
       ],
       image: gitSearch,
       source_code_link: 'https://github.com/Kenzie-Academy-Brasil-Developers/gitSearchBase-Leonardo-L-Cunha',
+      source_vercel_link:'https://git-search-base-leonardo-l-cunha.vercel.app/'
     },
     {
       name: 'Kenzie Empresas',
@@ -259,6 +289,7 @@ import {
       ],
       image: kenzieEmpresas,
       source_code_link: 'https://github.com/Kenzie-Academy-Brasil-Developers/m2-projeto-frotend-empresas-Leonardo-L-Cunha',
+      source_vercel_link:'https://m2-projeto-frotend-empresas-leonardo-l-cunha.vercel.app/'
     },
   ]
   

@@ -2,8 +2,9 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../utils/motion'
 import Tilt from 'react-tilt'
 import { github } from '../assets'
+import { vercel } from '../assets'
 const ProjectCard = ({index, name, description, tags, 
-    image, source_code_link}) => {
+    image, source_code_link ,source_vercel_link }) => {
     return (
         <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
             <Tilt
@@ -30,7 +31,17 @@ const ProjectCard = ({index, name, description, tags,
                     >
                         <img src={github} alt='github'  className='w-1/2 h-1/2 object-contain'/>
                     </div>
-                </div>     
+                </div> 
+                <div className='absolute  top-0 flex
+                justify-end m-3 card-img_hover'>
+                    <div
+                        onClick={() => window.open(source_vercel_link, '_blank')}
+                        className='black-gradient w-10 h-10 rounded-full
+                        flex justify-center items-center cursor-pointer'
+                    >
+                        <img src={vercel} alt='vercel'  className='w-1/2 h-1/2 object-contain'/>
+                    </div>
+                </div>         
             </div>
             <div className='mt-5'>
                 <h3 className='text-white font-bold text-[24px]'>{name}</h3>
