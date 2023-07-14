@@ -26,7 +26,7 @@ import controlFinance from './controlFinance.png'
 import linkedin from './linkedin.png'
 import moon from './moon.png'
 import express from './tech/expressJs.png'
-import postgres from './tech/postgresql.png'
+import postgres from './tech/postgressql.png'
 import styledComponents from './tech/styled-components.svg'
 import github2 from './tech/github2.png'
 import fullstack from './tech/fullstack.png'
@@ -35,6 +35,8 @@ import python from  './tech/python.png'
 import django from './tech/django.png'
 import nest from './tech/nest.png'
 import next from './tech/next-js.svg'
+import musicApp from './musicApp.png'
+import carHub from './carHub.png'
 
 
 export {
@@ -74,5 +76,7 @@ export {
   python,
   django,
   nest,
-  next
+  next,
+  musicApp,
+  carHub
 }

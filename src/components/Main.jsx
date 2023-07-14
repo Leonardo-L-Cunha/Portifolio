@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { moon } from '../assets'
+import { github, linkedin, moon } from '../assets'
 import { styles } from '../styles'
 
 const Main = () => {
@@ -13,6 +13,10 @@ const Main = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Sou desenvolvedor Full-Stack
           </p>
+          <div className='flex mt-4 gap-10'>
+            <a href="https://www.linkedin.com/in/leonardo-l-cunha-36b299246/" target='_blank'><img src={linkedin} alt="Linkedin" className='w-[40px] h-[40px]'/></a>
+            <a href="https://github.com/Leonardo-L-Cunha" target='_blank'><img src={github} alt="Github" className='w-[40px] h-[40px]' /></a>
+          </div>
         </div>
         <motion.div
           className='md:w-1/2 md:mt-0 mt-10 flex animate-pulse'

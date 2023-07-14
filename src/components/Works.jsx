@@ -21,7 +21,7 @@ const Works = () => {
           className='mt-3 text-secondary text-[17px] max-w-3x1 leading-[30px]'
         >A seguir meus projetos mostra minhas habilidades e experiência através de
           exemplos do mundo real do meu trabalho. Cada projeto é brevemente descrito com
-          links para repositórios de código e demonstrações ao vivo nele. Reflete o meu
+          links para repositórios de código e demonstrações ao vivo nele. Reflete a minha
           capacidade de resolver problemas complexos, trabalhar com diferentes tecnologias,
           e gerenciar projetos de forma eficaz. 
           Para ver todos meus projetos tanto front-end quanto back-end clique <a href='https://github.com/Leonardo-L-Cunha' target='_blank' className='font-bold text-blue-500'>aqui</a>

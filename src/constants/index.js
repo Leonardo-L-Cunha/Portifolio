@@ -28,7 +28,9 @@ import {
     python,
     django,
     next,
-    nest
+    nest,
+    musicApp,
+    carHub
   } from '../assets'
   
   export const navLinks = [
@@ -90,10 +92,6 @@ import {
       name: 'Node JS',
       icon: nodejs,
     },
-   {
-      name: 'Three JS',
-      icon: threejs,
-    },
     {
       name: 'git',
       icon: git,
@@ -111,16 +109,8 @@ import {
       icon: postgres,
     },
     {
-      name: 'Redux',
-      icon : redux,
-    },
-    {
       name: 'Python',
       icon : python,
-    },
-    {
-      name: 'Django',
-      icon : django,
     },
     {
       name: 'NextJs',
@@ -133,6 +123,75 @@ import {
   ]
   
  const projects = [
+    {
+    name: 'Music App FullStack',
+    description:
+      'Um app FullStack de musicas que você consegue ouvi uma musica, pular para proxima e escolher o tempo da musica. novas features em desenvolvimente',
+    tags: [
+      {
+        name: 'Javascript',
+        color: 'text-yellow-300',
+      },
+     {
+        name: 'Css',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Html',
+        color: 'text-red-600',
+      },
+      {
+        name: 'Next13',
+        color: 'text-gray-600',
+      },
+      {
+        name: 'NodeJs',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'NestJs',
+        color: 'text-red-600',
+      },
+      {
+        name: 'PostGres',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: musicApp,
+    source_code_link: 'https://github.com/Leonardo-L-Cunha/Music-full-stack',
+    source_vercel_link:'https://musicapp-eta.vercel.app/'
+    },
+    {
+      name: 'Car ShowCase',
+      description:
+        'Uma Aplicação front-end para amantes de carros, usando next13 e consumindo a API de carros de karsNinja',
+      tags: [
+        {
+          name: 'Javascript',
+          color: 'text-yellow-300',
+        },
+       {
+          name: 'Css',
+          color: 'blue-text-gradient',
+        },
+        {
+          name: 'Html',
+          color: 'text-red-600',
+        },
+        
+        {
+          name: 'Next13',
+          color: 'text-gray-600',
+        },
+        {
+          name: 'APIRest',
+          color: 'text-yellow-600',
+        }
+      ],
+      image: carHub,
+      source_code_link: 'https://github.com/Leonardo-L-Cunha/car_showcase',
+      source_vercel_link:'https://github.com/Leonardo-L-Cunha/car_showcase'
+      },
     {
       name: 'Junior Jobs',
       description:
@@ -265,32 +324,7 @@ import {
       source_code_link: 'https://github.com/Kenzie-Academy-Brasil-Developers/gitSearchBase-Leonardo-L-Cunha',
       source_vercel_link:'https://git-search-base-leonardo-l-cunha.vercel.app/'
     },
-    {
-      name: 'Kenzie Empresas',
-      description:
-        ' Principal objetivo é simular um MVP de uma aplicação de gestão de RH com dois tipos de usuários, um sendo o usuário comum, sendo um funcionário, na qual tem poucas funcionalidades e outra sendo a maquina admin, que gerencia toda a aplicação',
-      tags: [
-        {
-          name: 'Javascript',
-          color: 'text-yellow-300',
-        },
-       {
-          name: 'Css',
-          color: 'blue-text-gradient',
-        },
-        {
-          name: 'Html',
-          color: 'text-red-600',
-        },
-        {
-          name: 'APIrest',
-          color: 'green-text-gradient',
-        },
-      ],
-      image: kenzieEmpresas,
-      source_code_link: 'https://github.com/Kenzie-Academy-Brasil-Developers/m2-projeto-frotend-empresas-Leonardo-L-Cunha',
-      source_vercel_link:'https://m2-projeto-frotend-empresas-leonardo-l-cunha.vercel.app/'
-    },
+    
   ]
   
   export { services, technologies, projects }

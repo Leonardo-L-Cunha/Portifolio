@@ -27,6 +27,8 @@ const EarthCanvas = () => {
         far: 200,
         position: [-4, 3, 6]
       }}
+      style={{ width: '400px' }}
+
     >
       <Suspense fallback={<CanvasLoader/>}>
           <OrbitControls
